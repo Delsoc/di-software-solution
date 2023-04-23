@@ -30,8 +30,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "node_modules/@fontsource/montserrat/latin.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },

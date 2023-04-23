@@ -21,6 +21,7 @@ nav {
 
 .navigation {
   align-items: center;
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   list-style: none;
   margin: 0;
@@ -64,4 +65,57 @@ nav {
   .menu-toggle {
     display: none;
   }
+}
+
+.navigation li {
+  position: relative;
+}
+
+.navigation li:hover:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: #8B0000;
+  border-radius: 999px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  opacity: 0.6;
+  z-index: -1;
+  animation: circle 0.3s ease-in-out forwards;
+}
+
+@keyframes circle {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+}
+
+.navigation li a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navigation li a:focus,
+.navigation li a:active,
+.navigation li a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navigation li a:active:after,
+.navigation li a:focus:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #8B0000;
 }

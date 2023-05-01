@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './home/home.component';
 import { TypingTextComponent } from './components/header/typing-text/typing-text.component';
+import { ReplyTypingTextComponent } from './components/reply-typing-text/reply-typing-text.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +17,8 @@ import { TypingTextComponent } from './components/header/typing-text/typing-text
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TypingTextComponent
+    TypingTextComponent,
+    ReplyTypingTextComponent
   ],
   providers: [],
   bootstrap: [

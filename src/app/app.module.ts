@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './home/home.component';
 import { TypingTextComponent } from './components/header/typing-text/typing-text.component';
 import { ReplyTypingTextComponent } from './components/reply-typing-text/reply-typing-text.component';
+import { ScrollDownArrowComponent } from './components/scroll-down-arrow/scroll-down-arrow.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ReplyTypingTextComponent } from './components/reply-typing-text/reply-t
     BrowserModule,
     AppRoutingModule,
     TypingTextComponent,
-    ReplyTypingTextComponent
+    ReplyTypingTextComponent,
+    ScrollDownArrowComponent
   ],
   providers: [],
   bootstrap: [

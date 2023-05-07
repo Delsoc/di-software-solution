@@ -8,4 +8,13 @@ import { ScrollDownArrowComponent } from '../components/scroll-down-arrow/scroll
 })
 export class HomeComponent {
 
+  public belowId = 'below';
+
+  scrollToId(id: string){
+    const element = document.getElementById(id);
+    if(element!==null){
+      document.getElementById(id)?.scrollIntoView({behavior: 'smooth'});
+    }
+  }
+
 }

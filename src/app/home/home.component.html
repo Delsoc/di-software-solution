@@ -1,5 +1,7 @@
 <app-reply-typing-text></app-reply-typing-text>
 <div class="scroll-down">
-  <app-scroll-down-arrow></app-scroll-down-arrow>
+  <app-scroll-down-arrow (click)="scrollToId(belowId)"></app-scroll-down-arrow>
 </div>
-dfd
+<div [id]="belowId" style="background-color: aqua; height: 100vh;">
+  Hier hin wurde gescrollt
+</div>
